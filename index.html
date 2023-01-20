@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <img src="assets/chat_app_logo.png" alt="" />
+        <h1 class="title">Chat App</h1>
+      </div>
+      <div class="message-container">
+        <div class="message middle">
+          Hello Welcome to my Chat App<br />You can Chat with your Friends here!
+        </div>
+      </div>
+      <form action="#" id="send-container" class="send-container">
+        <input
+          type="text"
+          name="messageInp"
+          id="messageInp"
+          class="messageInp"
+        />
+        <button type="submit" class="send-btn">
+          <span class="material-symbols-outlined"> send </span>
+        </button>
+      </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
